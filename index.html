@@ -8,32 +8,53 @@
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css1">
 </head>
 <body>
   <div class="navbar">
-      <a href="#default" class="logo"> <img src="images/logo.svg" alt=""></a>
-<div class="header-left">
-  
-  <div class="dropdown">
-    <a href="dropbtn">Features</a>
-    
-    <div class="dropdown-list">
-<a href="#">Todo List</a>
-<a href="#">Calender</a>
-<a href="#">Reminders</a>
-<a href="#">Planning</a>
+  <a href="#default" class="logo">
+    <img src="images/logo.svg" alt="">
+  </a>
+
+  <div class="header-left">
+    <!-- Dropdown for Features -->
+    <div class="dropdown">
+      <a href="#" class="dropbtn">Features</a>
+      <div class="dropdown-list">
+        <a href="#">Todo List</a>
+        <a href="#">Calendar</a>
+        <a href="">Reminders</a>
+        <a href="#">Planning</a>
+      </div>
     </div>
-</div>
-    <a  href="#company">Company</a>
 
-  <a  href="#careers">Careers</a>
+    <div class="dropdown">
+      <a href="#" class="dropbtn">Company</a>
+      <div class="dropdown-list">
+        <a href="#">History</a>
+        <a href="#">Our Team</a>
+        <a href="#">Blog</a>
+      </div>
+    </div>
 
-  <a href="#about">About</a>
-  <div class="right">
-    <a class="icon" href="login">Login</a>
-   <button> <a class="icon-register" href="#Register">Register</a></button>
-</div>
+    <!-- Regular Links -->
+    <a href="#careers">Careers</a>
+    <a href="#about">About</a>
+
+    <!-- Right side links -->
+    <div class="right">
+      <a class="icon" href="login">Login</a>
+      <button><a class="icon-register" href="#Register">Register</a></button>
+    </div>
   </div>
+
+  <!-- Mobile Menu Icon -->
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
 
    <div class="container">
  <div>
@@ -58,6 +79,18 @@
     
       </div>
 </section>
+<script>
+// Get the menu toggle button and the header left section
+const menuToggle = document.getElementById("menu-toggle");
+const headerLeft = document.querySelector(".header-left");
+
+// Add an event listener to toggle the menu on click
+menuToggle.addEventListener("click", () => {
+  headerLeft.classList.toggle("active");
+});
+
+</script>
 </body>
+</html>
 </html>
 
