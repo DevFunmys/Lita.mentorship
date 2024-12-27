@@ -155,17 +155,16 @@ p{
 
 .btn-button {
   border: #f1f1f1 ;
-  color: black;
+  color: whitesmoke;
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
   display: inline;
   font-size: 10px;
   margin: 4px 2px;
-  cursor: grab;
-  background-color: white;
+  cursor: pointer;
+  background-color: black;
   border-radius: 2%;
-
 }
 
 
